@@ -1,0 +1,9 @@
+name: "Deploy Docusaurus to AWS S3"
+description: "Builds and syncs Docusaurus v2 site to Amazon S3 bucket"
+author: docuactions
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: refresh-cw
+  color: green
