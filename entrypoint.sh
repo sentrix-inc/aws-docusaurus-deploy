@@ -33,6 +33,7 @@ aws_secret_access_key = ${AWS_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
 echo "Install dependencies"
 yarn install
+npm ci
 
 echo "Run yarn build"
 yarn run build
