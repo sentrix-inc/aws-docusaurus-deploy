@@ -1,10 +1,10 @@
-FROM nikolaik/python-nodejs:python3.11-nodejs18-alpine
+FROM nikolaik/python-nodejs:python3.11-nodejs20-alpine
 
 
 LABEL version="1.0.0"
 
 # https://github.com/aws/aws-cli/blob/master/CHANGELOG.rst
-ENV AWSCLI_VERSION='1.29.40'
+ENV AWSCLI_VERSION='1.34.33'
 RUN pip install --quiet --no-cache-dir awscli==${AWSCLI_VERSION}
 
 RUN apk add autoconf
